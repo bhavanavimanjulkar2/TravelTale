@@ -60,7 +60,7 @@ body{
 }
 
 .navbar-collapse {
-  backdrop-filter: blur(5px); /* Adds a blur effect to the background */
+  backdrop-filter: blur(5px); 
   transition: backdrop-filter 0.3s ease; /* Smooth transition for the blur effect */
 }
 
@@ -232,7 +232,7 @@ body{
     font-size: 1rem;
   }
 
-
+/* Timeline  */
   
 .btn-orange{
   background-color: #fe424d;
@@ -272,6 +272,121 @@ body{
   font-size: 16px;
   border-radius: 25px;
 }
+
+
+.timeline {
+  border-left: 3px solid #ff385c; /* theme color */
+  padding-left: 20px;
+  margin-left: 10px;
+}
+
+.timeline-item {
+  position: relative;
+  border-radius: 12px;
+  background: #fff;
+}
+
+.timeline-item::before {
+  content: '';
+  width: 14px;
+  height: 14px;
+  background: #ff385c;
+  border-radius: 50%;
+  position: absolute;
+  left: -28px;
+  top: 20px;
+}
+
+.timeline-item:hover {
+  transform: translateY(-3px);
+  transition: 0.2s ease;
+}
+
+
+/* =========================
+   TIMELINE PAGE
+========================= */
+
+.timeline-container {
+    max-width: 900px;
+    margin: auto;
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+
+.journey-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.journey-subtitle {
+    color: gray;
+    margin-top: 10px;
+}
+
+.timeline {
+    border-left: 3px solid #ff385c;
+    padding-left: 35px;
+    margin-left: 15px;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 45px;
+}
+
+.timeline-item::before {
+    content: "";
+    width: 18px;
+    height: 18px;
+    background-color: #ff385c;
+    border-radius: 50%;
+    position: absolute;
+    left: -45px;
+    top: 35px;
+}
+
+.timeline-card {
+    display: flex;
+    gap: 22px;
+    background: white;
+    border-radius: 18px;
+    padding: 18px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+    transition: 0.25s ease;
+    align-items: center;
+}
+
+.timeline-card:hover {
+    transform: translateY(-4px);
+}
+
+.timeline-img {
+    width: 220px;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 14px;
+}
+
+.timeline-content {
+    flex: 1;
+}
+
+.timeline-content h4 {
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.location-text {
+    color: #666;
+    margin-bottom: 8px;
+}
+
+.date-text {
+    color: #444;
+    font-size: 0.95rem;
+}
+
 
   /* Filters icons */
 

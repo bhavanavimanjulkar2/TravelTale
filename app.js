@@ -23,19 +23,20 @@ const listingRouter = require("./routes/listing.js");
 const reviewRouter = require("./routes/reviews.js");
 const userRouter = require("./routes/user.js");
 
-const dbUrl = process.env.ATLASDB_URL || "mongodb+srv://bhavanamanjulkar2003:tqkkMmWuSfM1rGMq@cluster0.p3vlh.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+const dbUrl = process.env.ATLASDB_URL; 
 
-async function main() {
-    try {
-        await mongoose.connect(dbUrl, {
-            useNewUrlParser: true,
-            useUnifiedTopology: true
-        });  
-        console.log("Connected to MongoDB Atlas!");
-    } catch (err) {
-        console.error("Error connecting to MongoDB Atlas:", err);
-    }
-}
+// async function main() {
+//     try {
+//        await mongoose.connect(dbUrl, {
+//         tlsAllowInvalidCertificates: true
+//        });
+
+//         console.log("Connected to MongoDB Atlas!");
+//     } catch (err) {
+//         console.error("Error connecting to MongoDB Atlas:", err);
+//     }
+// }
+
 
 async function main(){
     await mongoose.connect(dbUrl);

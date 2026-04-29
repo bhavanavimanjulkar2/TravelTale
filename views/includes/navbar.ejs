@@ -16,7 +16,7 @@
 
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="logo">
-          <a href="/" class="navbar-brand">Plan<span>My</span>Trip</a>
+          <a href="/" class="navbar-brand">Travel<span>Tale</span></a>
         </div>
 
 
@@ -52,6 +52,10 @@
           <a class="nav-link pill-btn btn-orange" href="/login"><b>Log In</b></a>
           <% } %>
           <% if(currUser) { %>
+          <a href="/listings/timeline" class="nav-link">
+  <i class="fa-solid fa-route"></i> My Journey
+</a>
+
           <a class="nav-link pill-btn btn-orange" href="/logout"><b>Log Out</b></a>
           <% } %>
         </div>

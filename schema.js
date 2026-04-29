@@ -10,6 +10,7 @@ module.exports.listingSchema = Joi.object({
         price: Joi.number().required().min(0),
         image: Joi.string().allow("", null),
         locationType: Joi.string().valid('arctic', 'farms', 'trending', 'rooms', 'adventurous', 'castle', 'wild', 'camping', 'beach', 'desert').required(), // Include locationType here
+        visitDate: Joi.date().required(),
     }).required()
 });
 
