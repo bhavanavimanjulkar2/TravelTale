@@ -1,6 +1,4 @@
-# 🌍 TravelTale
-
-# 🌍 TravelTale
+                                            # 🌍 TravelTale
 
 TravelTale is a full-stack travel social media platform where users can share their travel experiences by creating posts with images, descriptions, locations, estimated costs, and visit dates. Users can explore destinations shared by others, leave reviews and ratings, and interact with travel stories through a clean and engaging interface.
 
